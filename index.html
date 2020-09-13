@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css ">
+    </head>
+    <body>
+    <div class="container">
+        <h1 id="title">University Course Survey Form 2020</h1>
+
+        <p id="description">The purpose of the course feedback system is to systematically collect feedback
+            from all credit-earning education for degree students at the University. The
+            feedback is used in the development of teaching (teachers, departments,
+            faculties and independent institutes), the strategic planning of education and
+            research purposes. Primarily, the purpose of feedback is to help teachers to
+            develop their teaching. The feedback is collected through an electronic system
+            of the University. Teachers have an obligation to provide counter feedback to
+            students.</p>
+
+        <form id="survey-form">
+            <!--User details-->
+            <label id="name-label">Full Name: <br></label>
+            <input id="name" type="text" name="FullName" placeholder="enter your full name here"><br>
+            <lable id="email-label">Email:<br></lable>
+            <input id="email" type="email" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" placeholder="enter your email address here"><br>
+            <label id="id-label">ID Number:<br></label> 
+            <input id="number" type="text" name="id-number" pattern="[0-9]{13}" placeholder="enter your ID Number here"><br>
+            <label id="gender-label">Gender: <br></label>
+            <input id="male-gender" type="radio" name="gender" value="male"> Male<br>
+            <input id="female-gender" type="radio" name="gender" value="female"> Female<br><br>
+
+            <!--survey form-->
+                Please select the course you are surveying for<br>
+                <select id="dropdown">
+                    <option>Mathematics</option>
+                    <option>Computer Science</option>
+                    <option>Chemistry</option>
+                    <option>Geography</option>
+                    <option>Electronics</option>
+                    <option>Physics</option>
+                    <option>Biology</option>
+                </select>
+                <br><br>
+            <fieldset id="group1">
+                What are the strategies used in the mentioned course?<br>
+                <input type="checkbox" name="group1" value="tests"> Tests<br>
+                <input type="checkbox" name="group1" value="examinations"> Examinations<br>
+                <input type="checkbox" name="group1" value="quizzes"> Quizzes<br>
+                <input type="checkbox" name="group1" value="practicals"> Practicals<br>
+                <input type="checkbox" name="group1" value="assignments"> Assignments<br>
+                <input type="checkbox" name="group1" value="homeworks"> Homeworks<br>
+            </fieldset>
+
+            <fieldset id="group2">
+                Overall, how would you rate the course?<br>
+                <input type="radio" name="group2" value="Excellent"> Excellent<br>
+                <input type="radio" name="group2" value="Very Good"> Very Good<br>
+                <input type="radio" name="group2" value="Good"> Good<br>
+                <input type="radio" name="group2" value="Fair"> Fair<br>
+                <input type="radio" name="group2" value="Poor"> Poor<br> 
+            </fieldset>
+
+            <fieldset id="group3">
+                How useful were the course materials?<br>
+                <input type="radio" name="group3" value="extremely useful"> Extremely useful<br>
+                <input type="radio" name="group3" value="very useful"> Very usefull<br>
+                <input type="radio" name="group3" value="somewhat useful"> Somewhat useful<br>
+                <input type="radio" name="group3" value="not so useful"> Not so useful<br>
+                <input type="radio" name="group3" value="not at all useful"> Not at all useful<br>
+            </fieldset>
+
+            <fieldset id="group4">
+                How clearly did your intructor explain the course material?<br>
+                <input type="radio" name="group4" value="extremely clearly"> Extremely clearly <br>
+                <input type="radio" name="group4" value="extremely clearly"> Very clearly <br>
+                <input type="radio" name="group4" value="extremely clearly"> Somewhat clearly <br>
+                <input type="radio" name="group4" value="extremely clearly"> Not so clearly <br>
+                <input type="radio" name="group4" value="extremely clearly"> Not at all clearly <br>
+            </fieldset>
+
+            <fieldset id="group5">
+                Was the speed with which your instructor presented the course material too fast, too slow, or about right?<br>
+                <input type="radio" name="group5" value="much too fast">Much too fast<br>
+                <input type="radio" name="group5" value="too fast">Too fast<br>
+                <input type="radio" name="group5" value="the right amount">The right amount<br>
+                <input type="radio" name="group5" value="too slow">Too slow<br>
+                <input type="radio" name="group5" value="much too slow">Much too slow<br>
+            </fieldset>
+
+            <fieldset id="group6">
+                How well did your instructor answer students' questions<br>
+                <input type="radio" name="group6" value="extremely well"> Extremely well<br>
+                <input type="radio" name="group6" value="very well"> Very well<br>
+                <input type="radio" name="group6" value="somewhat well"> Somewhat well<br>
+                <input type="radio" name="group6" value="not so well"> Not so well<br>
+                <input type="radio" name="group6" value="not at all well"> Not at all well<br>
+            </fieldset>
+
+            <fieldset id="group7">
+                How comfortable did you feel voicing your opinions in class?<br>
+                <input type="radio" name="group7" value="extremely comfortable"> Extremely comfortable<br>
+                <input type="radio" name="group7" value="very comfortable"> Very comfortable<br>
+                <input type="radio" name="group7" value="somewhat comfortable"> Somewhat comfortable<br>
+                <input type="radio" name="group7" value="not so comfortable"> Not so comfortable<br>
+                <input type="radio" name="group7" value="not at all comfortable"> Not at all comfortable<br>
+            </fieldset>
+
+            <fieldset id="group8">
+                How helpful were the homework assignments to your understanding of the material?<br>
+                <input type="radio" name="group8" value="extremely helpful"> Extremely helpful<br>
+                <input type="radio" name="group8" value="very helpful"> Very helpful<br>
+                <input type="radio" name="group8" value="somewhat helpful"> Somewhat helpful<br>
+                <input type="radio" name="group8" value="not so helpful"> Not so helpful<br>
+                <input type="radio" name="group8" value="not at all helpful"> Not at all helpful<br>
+            </fieldset>
+
+            <br>
+            What improvement would you make to the course? Write down you comments inside the block bellow<br>
+            <textarea style=" width:100%; height:200px;"></textarea>
+            <br>
+            <!--Submit Button-->
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+    </body>
+</html>
